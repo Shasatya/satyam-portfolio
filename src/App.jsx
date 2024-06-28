@@ -1,12 +1,23 @@
 import "./App.scss";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-
+import {
+  Contact,
+  Home,
+  Projects,
+  Skills,
+  StarsCanvas,
+} from "./sections/index";
 const App = () => {
   return (
     <>
-      <Home />
-      <About />
+      <section>
+        <Home />
+      </section>
+      <Skills />
+      <Projects />
+      <section>
+        <Contact />
+      </section>
+      <StarsCanvas />
     </>
   );
 };

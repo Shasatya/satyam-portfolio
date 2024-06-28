@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Poor+Story&family=Sniglet&family=Space+Grotesk:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
-body {
+html {
+    scroll-behavior: smooth;
+    background-color: #000;
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-* {
-    font-family: "Courier Prime";
+section {
+    height: 100vh;
 }

@@ -1,0 +1,73 @@
+.contact {
+    height: 100%;
+    max-width: 1336px; //ye hatana hai
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    .text-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h1 {
+            font-size: 100px;
+            line-height: 90px;
+            // font-family: "Industry-Book";
+            // color: #5D12D2;
+            // color: #B931FC;
+            color: #9400FF;
+            // color: #C21292;
+            // color: #711DB0; //ye
+            // color: #940B92;
+        }
+
+        .text-item {
+            color: #fff;
+
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+
+    .form-container {
+        flex: 1;
+        position: relative;
+
+        .phone-icon {
+            position: absolute;
+            stroke: #9400FF;
+            margin: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            textarea {
+                padding: 20px;
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                resize: none;
+                outline: none;
+            }
+
+            button {
+                padding: 20px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-color: #9400FF;
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+    }
+}
