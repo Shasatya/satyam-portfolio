@@ -1,0 +1,99 @@
+.navigator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .navigator {
+        background-color: gray;
+        position: fixed;
+        bottom: 4%;
+        left: auto;
+        right: auto;
+        padding: 1rem 2rem;
+        border-radius: 40px;
+        z-index: 2;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            li {
+                cursor: pointer;
+
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    color: #000;
+
+                    &:hover {
+                        color: #9400FF;
+
+                        svg {
+                            fill: #9400FF;
+                        }
+                    }
+
+                    svg {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        fill: #000;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                    }
+                }
+
+                .active-link {
+                    color: #9400FF;
+
+                    svg {
+                        fill: #9400FF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width<600px) {
+    .navigator-container {
+        margin-bottom: 0;
+
+        .navigator {
+            bottom: 0%;
+            width: 100%;
+            border-radius: 0px;
+
+            ul {
+                justify-content: space-between;
+                padding: 0 4%;
+                gap: 30px;
+
+                li {
+
+                    a {
+                        flex-direction: column;
+
+                        svg {
+                            height: 1.5rem;
+                            width: 1.5rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

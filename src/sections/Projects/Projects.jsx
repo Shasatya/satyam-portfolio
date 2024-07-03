@@ -4,18 +4,16 @@ import "./Projects.scss";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1>Projects</h1>
 
       <div className="container">
-          {ProjectCardData.map((card) => {
-            return <ProjectCard card={card} key={card.id} />;
-          })}
+        {ProjectCardData.map((card) => {
+          return <ProjectCard card={card} key={card.id} />;
+        })}
       </div>
     </div>
   );
 };
-
-
 
 export default Projects;

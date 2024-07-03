@@ -3,24 +3,21 @@ import PropTypes from "prop-types";
 const ProjectCard = ({ card }) => {
   return (
     <>
-      <div className="project-card">
-        <div className="card" key={card.id}>
-          <div className="img-div">
-            <img src={card.img} alt="" />
-          </div>
-          <div className="card-text">
-            <h2>{card.title}</h2>
-            <div className="tags">
-              {card.used.map((i) => (
-                <p key={i}>{i}</p>
-              ))}
-            </div>
+      <div className="project-card" key={card.id}>
+        <div className="img-div">
+          <img src={card.img} alt="" />
+        </div>
+        <div className="card-text">
+          <h2>{card.title}</h2>
+          <div className="tags">
+            {card.used.map((i) => (
+              <p key={i}>{i}</p>
+            ))}
           </div>
         </div>
         <div className="card-overlay">
           <div className="overlay-content">
             <a href={card.git} target="_blank" rel="noreferrer">
-              {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="16"
