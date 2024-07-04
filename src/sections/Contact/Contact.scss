@@ -1,31 +1,39 @@
+@import "../../Constants.scss";
+
 .contact {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 64px;
-    gap: 60px;
-    margin: 10rem 0;
+    padding: 0 4rem;
+    gap: 3.75rem;
+    min-height: 100vh;
 
     .text-container {
 
         h1 {
-            font-size: 100px;
-            line-height: 90px;
-            color: #9400FF;
+            font-size: 6.25rem;
+            line-height: 5.625rem;
+            color: $lightPurple;
+            font-family: $font1;
         }
 
         .text-item-container {
             display: flex;
             flex-direction: column;
-            gap: 40px;
-            margin-top: 40px;
+            gap: 2.5rem;
+            margin-top: 2.5rem;
 
             .text-item {
-                color: #fff;
+                color: $white;
+
+                h2 {
+                    font-family: $font1;
+                }
 
                 span {
-                    font-weight: 300;
+                    font-weight: 400;
+                    font-family: $font2;
                 }
             }
         }
@@ -33,7 +41,7 @@
 
     .form-container {
         position: relative;
-        width: 500px;
+        width: 31.25rem;
 
         .phone-icon {
             position: absolute;
@@ -43,42 +51,45 @@
         form {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 1.25rem;
 
             input,
             textarea {
-                padding: 20px;
+                padding: 1.25rem;
                 background-color: transparent;
-                color: #fff;
-                border: 1px solid #fff;
-                border-radius: 5px;
+                color: $white;
+                border: 0.063rem solid $white;
+                border-radius: 0.313rem;
                 resize: none;
                 outline: none;
+                font-family: $font2;
             }
 
             button {
-                padding: 20px;
+                padding: 1.25rem;
                 border: none;
                 outline: none;
                 cursor: pointer;
-                background-color: #9400FF;
-                color: #fff;
+                background-color: $lightPurple;
+                color: $white;
                 font-weight: 500;
+                font-family: $font1;
+                font-size: 1.2rem;
             }
         }
     }
 }
 
-@media (width<1090px) {
+@media (width<68.125rem) {
     .contact {
         flex-direction: column;
-        padding: 0 16px;
-        gap: 100px;
-        margin-bottom: 200px;
+        padding: 0 1rem;
+        gap: 6.25rem;
+        margin-bottom: 7.5rem;
 
         .text-container {
             h1 {
-                margin-top: 100px;
+                margin-top: 6.25rem;
                 text-align: center;
             }
 
@@ -86,7 +97,7 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                margin-top: 80px;
+                margin-top: 5rem;
             }
         }
     }

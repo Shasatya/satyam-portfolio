@@ -3,8 +3,8 @@ import {
   Contact,
   Home,
   Projects,
-  // Skills,
-  // StarsCanvas,
+  Skills,
+  StarsCanvas,
   Navigator,
 } from "./sections/index";
 const App = () => {
@@ -14,11 +14,10 @@ const App = () => {
       <section>
         <Home />
       </section>
-      {/* <Skills /> */}
+      <Skills />
       <Projects />
       <Contact />
-
-      {/* <StarsCanvas /> */}
+      <StarsCanvas />
     </>
   );
 };

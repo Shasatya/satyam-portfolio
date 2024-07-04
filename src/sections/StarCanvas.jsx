@@ -15,7 +15,7 @@ const StarBackground = (props) => {
   });
 
   return (
-    <group >
+    <group>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
@@ -39,7 +39,7 @@ const StarsCanvas = () => (
       left: "0",
       width: "100%",
       height: "auto",
-      zIndex:"-1" //changeable
+      zIndex: "-1",
     }}
   >
     <Canvas camera={{ position: [0, 0, 1] }}>

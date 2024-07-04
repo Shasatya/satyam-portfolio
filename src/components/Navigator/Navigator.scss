@@ -1,3 +1,5 @@
+@import "../../Constants.scss";
+
 .navigator-container {
     display: flex;
     align-items: center;
@@ -11,14 +13,14 @@
         left: auto;
         right: auto;
         padding: 1rem 2rem;
-        border-radius: 40px;
+        border-radius: 2.5rem;
         z-index: 2;
 
         ul {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 50px;
+            gap: 3.125rem;
 
             li {
                 cursor: pointer;
@@ -28,34 +30,35 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    gap: 6px;
-                    color: #000;
+                    gap: 0.375rem;
+                    color: $black;
 
                     &:hover {
-                        color: #9400FF;
+                        color: $lightPurple;
 
                         svg {
-                            fill: #9400FF;
+                            fill: $lightPurple;
                         }
                     }
 
                     svg {
-                        height: 2.5rem;
-                        width: 2.5rem;
-                        fill: #000;
+                        height: 2rem;
+                        width: 2rem;
+                        fill: $black;
                     }
 
                     p {
                         font-size: 1.1rem;
-                        font-weight: 600;
+                        font-weight: 500;
+                        font-family: $font1;
                     }
                 }
 
                 .active-link {
-                    color: #9400FF;
+                    color: $lightPurple;
 
                     svg {
-                        fill: #9400FF;
+                        fill: $lightPurple;
                     }
                 }
             }
@@ -63,19 +66,19 @@
     }
 }
 
-@media (width<600px) {
+@media (width<37.5rem) {
     .navigator-container {
         margin-bottom: 0;
 
         .navigator {
             bottom: 0%;
             width: 100%;
-            border-radius: 0px;
+            border-radius: 0rem;
 
             ul {
                 justify-content: space-between;
                 padding: 0 4%;
-                gap: 30px;
+                gap: 1.875rem;
 
                 li {
 
@@ -90,7 +93,6 @@
                         p {
                             font-size: 1rem;
                         }
-
                     }
                 }
             }
