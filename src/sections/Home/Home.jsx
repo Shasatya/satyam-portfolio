@@ -1,6 +1,6 @@
+import "./HomeStyles.scss";
 import { react } from "../../assets";
 import Button from "../../components/Button/Button";
-import "./HomeStyles.scss";
 const Home = () => {
   return (
     <div className="home" id="home">

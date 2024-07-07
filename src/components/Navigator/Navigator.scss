@@ -12,7 +12,7 @@
         bottom: 4%;
         left: auto;
         right: auto;
-        padding: 1rem 2rem;
+        padding: 0.8rem 2rem;
         border-radius: 2.5rem;
         z-index: 2;
         border: 0.063rem solid $white;
@@ -48,8 +48,9 @@
 
                     p {
                         font-size: 1.1rem;
-                        font-weight: 500;
+                        font-weight: 450;
                         font-family: $font1;
+                        line-height: 2rem;
                     }
                 }
 
