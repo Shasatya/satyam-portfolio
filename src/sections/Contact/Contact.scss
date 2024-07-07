@@ -59,22 +59,10 @@
                 background-color: transparent;
                 color: $white;
                 border: 0.063rem solid $white;
-                border-radius: 0.313rem;
+                border-radius: 2rem;
                 resize: none;
                 outline: none;
                 font-family: $font2;
-            }
-
-            button {
-                padding: 1.25rem;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                background-color: $lightPurple;
-                color: $white;
-                font-weight: 500;
-                font-family: $font1;
-                font-size: 1.2rem;
             }
         }
     }

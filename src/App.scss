@@ -18,3 +18,14 @@ html {
 section {
     height: 100vh;
 }
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0.2rem;
+    background-color: $lightPurple;
+    z-index: 200;
+    transition: width 0s ease-in-out;
+}
+

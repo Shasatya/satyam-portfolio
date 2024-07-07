@@ -1,0 +1,19 @@
+@import "../../Constants.scss";
+
+.button {
+    background-color: $lightPurple;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding:0.8rem 1rem;
+    font-weight: 450;
+    font-family: $font1;
+    font-size: 1rem;
+    color: $white;
+    border-radius: 2rem;
+}
+
+.resume {
+    background-color: $white;
+    color: $black;
+}

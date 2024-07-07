@@ -1,10 +1,10 @@
-import "./SkillsStyles.scss";
+import "./StackStyles.scss";
 import { SkillsData } from "../../constants";
 
-const Skills = () => {
+const Stack = () => {
   return (
-    <div className="skills" id="stack">
-      <div className="skills-1">
+    <div className="stack">
+      <div className="stack-1">
         <h1>Tech Stack</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui,
@@ -12,7 +12,7 @@ const Skills = () => {
           ex!
         </p>
       </div>
-      <div className="skills-2">
+      <div className="stack-2">
         {SkillsData.map((s, i) => (
           <img src={s} key={i} alt="skill" />
         ))}
@@ -20,4 +20,4 @@ const Skills = () => {
     </div>
   );
 };
-export default Skills;
+export default Stack;
