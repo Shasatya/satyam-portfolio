@@ -71,30 +71,7 @@ export const ProjectCardData = [
   },
 ];
 
-export const SkillsData = [
-  insomnia,
-  redux,
-  canva,
-  chakra,
-  postman,
-  astudio,
-  idea,
-  express,
-  jquery,
-  mysql,
-  mongo,
-  html,
-  css,
-  js,
-  bootstrap,
-  react,
-  gsap,
-  kotlin,
-  python,
-  java,
-  node,
-  vs,
-];
+export const SkillsData = [redux, astudio, idea, jquery, gsap, kotlin, java];
 
 export const NavListData = [
   {
@@ -136,5 +113,33 @@ export const NavListData = [
         <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
       </svg>
     ),
+  },
+];
+
+export const StackData = [
+  {
+    key: 1,
+    title: "Programming Languages",
+    icons: [js, python],
+  },
+  {
+    key: 2,
+    title: "Front-End",
+    icons: [html, css, react, chakra, bootstrap],
+  },
+  {
+    key: 3,
+    title: "Back-End",
+    icons: [node, express],
+  },
+  {
+    key: 4,
+    title: "Database Management",
+    icons: [mongo, mysql],
+  },
+  {
+    key: 5,
+    title: "Tools",
+    icons: [vs, idea, insomnia, postman, canva],
   },
 ];

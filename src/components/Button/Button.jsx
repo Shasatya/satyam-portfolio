@@ -24,7 +24,7 @@ const Button = ({ label, href }) => {
   };
   return (
     <button
-      className={label === "Resume" ? "button resume" : "button"}
+      className={label === "View Resume" ? "button resume" : "button"}
       onClick={handleClick}
     >
       {label}

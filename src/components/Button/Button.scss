@@ -1,19 +1,23 @@
 @import "../../Constants.scss";
 
 .button {
-    background-color: $lightPurple;
+    background-color: $yellow;
     border: none;
     outline: none;
     cursor: pointer;
-    padding:0.8rem 1rem;
+    padding: 0.8rem 1.5rem;
     font-weight: 450;
     font-family: $font1;
     font-size: 1rem;
-    color: $white;
+    color: $black;
     border-radius: 2rem;
 }
 
 .resume {
-    background-color: $white;
-    color: $black;
+    background: rgba(13, 13, 13, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid $grey4;
+    color: $grey1;
+    box-shadow: none;
 }

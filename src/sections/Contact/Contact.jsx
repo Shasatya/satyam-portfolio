@@ -58,7 +58,7 @@ const Contact = () => {
         id="contact"
       >
         <div className="text-container">
-          <h1>
+          <h1 className="heading_1">
             Lets work <br /> together
           </h1>
           <div className="text-item-container">

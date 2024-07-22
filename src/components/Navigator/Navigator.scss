@@ -7,7 +7,6 @@
     width: 100%;
 
     .navigator {
-        background-color: transparent;
         position: fixed;
         bottom: 4%;
         left: auto;
@@ -15,7 +14,10 @@
         padding: 0.8rem 2rem;
         border-radius: 2.5rem;
         z-index: 2;
-        border: 0.063rem solid $white;
+        background: rgba(13, 13, 13, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid $grey4;
 
         ul {
             display: flex;
@@ -31,11 +33,11 @@
                     align-items: center;
                     justify-content: center;
                     gap: 0.375rem;
-                    color: $white;
+                    color: $grey2;
                     transition: all 0.3s;
 
                     &:hover {
-                        color: $lightPurple;
+                        color: $grey1;
                     }
 
                     svg {
@@ -47,9 +49,9 @@
                     }
 
                     p {
-                        font-size: 1.1rem;
-                        font-weight: 450;
-                        font-family: $font1;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        font-family: $font2;
                         line-height: 2rem;
                     }
                 }

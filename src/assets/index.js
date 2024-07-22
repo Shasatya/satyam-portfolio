@@ -4,6 +4,9 @@ import p3 from "../assets/3.png";
 import p4 from "../assets/4.png";
 import p5 from "../assets/5.png";
 
+import logo from "../assets/logo.png";
+import star from "../assets/star.png";
+
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
@@ -26,6 +29,7 @@ import chakra from "../assets/chakra.png";
 import canva from "../assets/canva.png";
 import redux from "../assets/redux.png";
 import insomnia from "../assets/insomnia.png";
+import figma from "../assets/figma.png";
 
 export {
   p1,
@@ -33,6 +37,8 @@ export {
   p3,
   p4,
   p5,
+  logo,
+  star,
   insomnia,
   redux,
   canva,
@@ -55,4 +61,5 @@ export {
   java,
   node,
   vs,
+  figma,
 };

@@ -3,7 +3,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #000;
+    background-color: #0D0D0D;
     overflow-x: hidden;
 }
 
@@ -15,12 +15,30 @@ html {
     margin: 0;
 }
 
-.progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 0.2rem;
-    background-color: $lightPurple;
-    z-index: 2;
-    transition: width 0s ease-in-out;
+.heading_1 {
+    font-size: 6.25rem;
+    line-height: 5.625rem;
+    color: $lightPurple;
+    font-family: $font1;
+}
+
+.heading_2 {
+    font-family: $font1;
+    font-size: 5rem;
+    line-height: 5.625rem;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: $lightPurple;
+    color: transparent;
+
+    &::selection {
+        background-color: $lightPurple;
+        color: $white;
+    }
+}
+
+@media (width<600px) {
+    .heading_1 {
+        font-size: 3rem;
+        line-height: 2rem;
+    }
 }

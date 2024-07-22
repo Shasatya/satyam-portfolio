@@ -1,30 +1,26 @@
-import "./HomeStyles.scss";
-import { react } from "../../assets";
+import "./Home.scss";
+import { logo } from "../../assets";
 import Button from "../../components/Button/Button";
 const Home = () => {
   return (
     <div className="home" id="home">
       <div className="home-top">
-        <img src={react} alt="" />
+        <img src={logo} alt="" />
         <Button label={"Contact Me"} href={"contact"} />
       </div>
       <div className="home-middle">
         <h1>
-          Hello, I am <span>Satyam</span>
+          Satyam Sharma <br />
+          Full Stack Developer
         </h1>
-        <h2>Full Stack Developer</h2>
         <p>
-          Full-stack developer with over a year of experience crafting
-          high-performing web and mobile applications. Skilled in front-end
-          development and back-end development to deliver scalable solutions.
-          Adept at managing databases and optimizing user experience. Proven
-          ability to thrive in agile environments and contribute effectively to
-          project success. Continuously learning and adapting to new
-          technologies to stay ahead of the curve.
+          Innovative design solutions for technology firms and emerging
+          businesses weary of the typical aesthetic methodology. Arriving
+          shortly.
         </p>
         <div className="home-btns">
           <Button label={"Let's Connect"} href={"contact"} />
-          <Button label={"Resume"} />
+          <Button label={"View Resume"} />
         </div>
       </div>
       <div className="home-side">

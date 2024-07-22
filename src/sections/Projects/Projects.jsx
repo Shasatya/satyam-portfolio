@@ -5,7 +5,7 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <div className="projects" id="projects">
-      <h1>Projects</h1>
+      <h1 className="heading_2">Projects</h1>
 
       <div className="container">
         {ProjectCardData.map((card) => {

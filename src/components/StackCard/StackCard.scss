@@ -1,0 +1,32 @@
+@import "../../Constants.scss";
+
+.stack-card {
+
+    p {
+        color: white;
+        font-family: $font2;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+
+    .card {
+        background-color: $grey3;
+        border: 0.1px solid $grey4;
+        height: 6rem;
+        width: 30rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+
+        // background: rgb(16, 16, 16);
+        // background: linear-gradient(135deg, rgba(25, 25, 25, 1) 0%, rgba(16, 16, 16, 1) 100%);
+
+        img {
+            height: 4rem;
+            width: 4rem;
+            margin-right: 0.4rem;
+        }
+    }
+}

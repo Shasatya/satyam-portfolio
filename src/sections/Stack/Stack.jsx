@@ -1,20 +1,18 @@
-import "./StackStyles.scss";
-import { SkillsData } from "../../constants";
+import "./Stack.scss";
+import { StackData } from "../../constants";
+import Text from "../../components/Text/Text";
+import StackCard from "../../components/StackCard/StackCard";
 
 const Stack = () => {
   return (
     <div className="stack">
       <div className="stack-1">
-        <h1>Tech Stack</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui,
-          dolores. Numquam nihil consequuntur ab illo officiis. Quidem nulla eos
-          ex!
-        </p>
+        <Text textLabel={"Tech Stack"} />
+        <p>Building Blocks and Advanced Tools for Analysis and Processing</p>
       </div>
       <div className="stack-2">
-        {SkillsData.map((s, i) => (
-          <img src={s} key={i} alt="skill" />
+        {StackData.map((s) => (
+          <StackCard key={s.key} cardKey={s.key} {...s} />
         ))}
       </div>
     </div>
