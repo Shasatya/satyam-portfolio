@@ -5,9 +5,10 @@ import {
   Home,
   Projects,
   Stack,
-  Navigator,
   About,
+  Footer,
 } from "./sections/index";
+import { Navigator } from "./components";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       <Element name="contact">
         <Contact />
       </Element>
+      <Footer />
     </>
   );
 };

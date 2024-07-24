@@ -1,12 +1,11 @@
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { ProjectCardData } from "../../constants";
 import "./Projects.scss";
+import { ProjectCardData } from "../../constants";
+import { Text, ProjectCard } from "../../components/index";
 
 const Projects = () => {
   return (
     <div className="projects" id="projects">
-      <h1 className="heading_2">Projects</h1>
-
+      <Text textLabel={"Projects"} />
       <div className="container">
         {ProjectCardData.map((card) => {
           return <ProjectCard card={card} key={card.id} />;

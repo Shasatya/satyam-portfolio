@@ -1,7 +1,6 @@
 import "./Stack.scss";
 import { StackData } from "../../constants";
-import Text from "../../components/Text/Text";
-import StackCard from "../../components/StackCard/StackCard";
+import { Text, StackCard } from "../../components/index";
 
 const Stack = () => {
   return (

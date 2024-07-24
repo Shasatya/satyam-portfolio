@@ -8,7 +8,7 @@
 
     .navigator {
         position: fixed;
-        bottom: 4%;
+        bottom: 6%;
         left: auto;
         right: auto;
         padding: 0.8rem 2rem;
@@ -43,7 +43,7 @@
                     svg {
                         height: 1.5rem;
                         width: 1.5rem;
-                        fill: $white;
+                        fill: $grey2;
                         transition: all 0.3s;
                         display: none;
                     }
@@ -57,7 +57,7 @@
                 }
 
                 .active-link {
-                    color: $lightPurple;
+                    color: $yellow;
                 }
             }
         }
@@ -72,7 +72,7 @@
             bottom: 0%;
             width: 100%;
             border-radius: 0rem;
-            background-color: $black;
+            background-color: $grey3;
             border: none;
 
             ul {

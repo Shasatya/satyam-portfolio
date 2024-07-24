@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Button = ({ label, href }) => {
   const handleClick = async () => {
-    if (label === "Resume") {
+    if (label === "View Resume") {
       const fileUrl = "Resume.pdf";
       const fileName = "Resume.pdf";
       const response = await fetch(fileUrl);
