@@ -1,100 +1,66 @@
 @import "../../Constants.scss";
 
-.navigator-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.navigator {
+    position: fixed;
+    top: 10%;
+    // top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.8rem 2rem;
+    border-radius: 2.5rem;
+    z-index: 2;
+    background: rgba(13, 13, 13, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid $grey4;
 
-    .navigator {
-        position: fixed;
-        bottom: 6%;
-        left: auto;
-        right: auto;
-        padding: 0.8rem 2rem;
-        border-radius: 2.5rem;
-        z-index: 2;
-        background: rgba(13, 13, 13, 0.4);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid $grey4;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3.125rem;
 
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 3.125rem;
+        li {
+            cursor: pointer;
 
-            li {
-                cursor: pointer;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.375rem;
+                color: $grey2;
+                transition: all 0.3s;
 
-                a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0.375rem;
-                    color: $grey2;
+                &:hover {
+                    color: $grey1;
+                }
+
+                svg {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    fill: $grey2;
                     transition: all 0.3s;
-
-                    &:hover {
-                        color: $grey1;
-                    }
-
-                    svg {
-                        height: 1.5rem;
-                        width: 1.5rem;
-                        fill: $grey2;
-                        transition: all 0.3s;
-                        display: none;
-                    }
-
-                    p {
-                        font-size: 1rem;
-                        font-weight: 400;
-                        font-family: $font2;
-                        line-height: 2rem;
-                    }
+                    display: none;
                 }
 
-                .active-link {
-                    color: $yellow;
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    font-family: $font2;
+                    line-height: 2rem;
                 }
+            }
+
+            .active-link {
+                color: $yellow;
             }
         }
     }
 }
 
-@media (width<37.5rem) {
-    .navigator-container {
-        margin-bottom: 0;
 
-        .navigator {
-            bottom: 0%;
-            width: 100%;
-            border-radius: 0rem;
-            background-color: $grey3;
-            border: none;
-
-            ul {
-                justify-content: space-between;
-                padding: 0 4%;
-                gap: 1.875rem;
-
-                li {
-
-                    a {
-                        flex-direction: column;
-
-                        svg {
-                            display: block;
-                        }
-
-                        p {
-                            font-size: 1rem;
-                        }
-                    }
-                }
-            }
-        }
+@media (width<800px) {
+    .navigator {
+        display: none;
     }
 }

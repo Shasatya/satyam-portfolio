@@ -1,5 +1,5 @@
 import "./Stack.scss";
-import { StackData } from "../../constants";
+import { StackData } from "../../constants/index";
 import { Text, StackCard } from "../../components/index";
 
 const Stack = () => {
