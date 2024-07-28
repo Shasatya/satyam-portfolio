@@ -1,7 +1,6 @@
 @import "../../Constants.scss";
 
 .stack {
-    // height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +10,7 @@
     padding-bottom: 8rem;
 
     .stack-1 {
-        width: 50%;
+        width: 788px;
         display: flex;
         flex-direction: column;
 
@@ -33,40 +32,30 @@
         flex-wrap: wrap;
         gap: 2rem;
         margin-top: 3rem;
+    }
+}
 
-        img {
-            height: 5rem;
-            width: 5rem;
+@media (width<820px) {
+    .stack {
+
+        .stack-1 {
+            width: 580px;
+
+            p {
+                font-size: 2rem;
+            }
         }
     }
 }
 
-@media (width<56.25rem) {
+@media (width<600px) {
     .stack {
-        flex-direction: column;
-        width: 100%;
 
         .stack-1 {
             width: 90%;
 
-            h1 {
-                text-align: center;
-            }
-
             p {
-                text-align: center;
-            }
-        }
-
-        .stack-2 {
-            background-color: #fff;
-            width: 92%;
-            padding: 0 4%;
-            padding-bottom: 8%;
-
-            img {
-                height: 4rem;
-                width: 4rem;
+                font-size: 1.5rem;
             }
         }
     }

@@ -2,8 +2,7 @@
 
 .navigator {
     position: fixed;
-    top: 10%;
-    // top: 50%;
+    top: 5rem;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0.8rem 2rem;
@@ -13,6 +12,7 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid $grey4;
+    margin: 0 auto;
 
     ul {
         display: flex;
@@ -59,7 +59,7 @@
 }
 
 
-@media (width<800px) {
+@media (width<760px) {
     .navigator {
         display: none;
     }

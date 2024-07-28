@@ -21,3 +21,11 @@
     color: $grey1;
     box-shadow: none;
 }
+
+@media (width<600px) {
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        border-radius: 1rem;
+    }
+}

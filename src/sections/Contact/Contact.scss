@@ -13,6 +13,8 @@
         .text-item-container {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 4rem;
             margin-top: 4rem;
 
@@ -55,6 +57,29 @@
                 background-color: $grey3;
                 border: 0.1px solid $grey4;
             }
+        }
+    }
+}
+
+@media (width<600px) {
+    .contact {
+
+        .text-container {
+
+            .text-item-container {
+                flex-direction: column;
+
+                .text-item {
+
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .form-container {
+            width: 90%;
         }
     }
 }

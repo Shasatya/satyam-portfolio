@@ -1,6 +1,10 @@
 @import "../../Constants.scss";
 
 .stack-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     p {
         color: white;
@@ -8,22 +12,42 @@
         font-size: 1.2rem;
         font-weight: 400;
         margin-bottom: 0.5rem;
+        align-self: self-start;
     }
 
     .card {
         background-color: $grey3;
         border: 0.1px solid $grey4;
-        height: 6rem;
         width: 30rem;
         border-radius: 0.5rem;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        padding: 0 0.5rem;
+        padding: 1rem;
+        gap: 1rem;
 
         img {
-            height: 4rem;
-            width: 4rem;
-            margin-right: 0.4rem;
+            height: 5em;
+            width: 5rem;
+        }
+    }
+}
+
+@media (width<600px) {
+    .stack-card {
+
+        p {
+            font-size: 1rem;
+        }
+
+        .card {
+            width: 17rem;
+            gap: 0.5rem;
+
+            img {
+                height: 3em;
+                width: 3rem;
+            }
         }
     }
 }
