@@ -6,8 +6,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding: 4rem 0;
 
     .stack-1 {
         width: 788px;
@@ -50,6 +49,7 @@
 
 @media (width<600px) {
     .stack {
+        padding: 2rem 0;
 
         .stack-1 {
             width: 90%;

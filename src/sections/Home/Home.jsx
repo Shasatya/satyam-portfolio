@@ -14,9 +14,9 @@ const Home = () => {
           Full Stack Developer
         </h1>
         <p>
-          Innovative design solutions for technology firms and emerging
-          businesses weary of the typical aesthetic methodology. Arriving
-          shortly.
+          Comprehensive development solutions for tech startups and established
+          enterprises seeking robust and scalable applications. Transforming
+          ideas into reality.
         </p>
         <div className="home-btns">
           <Button label={"Let's Connect"} href={"contact"} />

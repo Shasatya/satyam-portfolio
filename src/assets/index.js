@@ -2,11 +2,11 @@ import logo from "../assets/logo.png";
 import star from "../assets/star.png";
 
 //project
-import p1 from "../assets/1.png";
-import p2 from "../assets/2.png";
-import p3 from "../assets/3.png";
-import p4 from "../assets/4.png";
-import p5 from "../assets/5.png";
+import ib from "../assets/ib.png";
+import cq from "../assets/cq.png";
+import qf from "../assets/qf.png";
+import c from "../assets/c.png";
+import ffz from "../assets/ffz.png";
 
 //stack 1
 import js from "../assets/js.png";
@@ -44,11 +44,11 @@ import canva from "../assets/canva.png";
 export {
   logo,
   star,
-  p1,
-  p2,
-  p3,
-  p4,
-  p5,
+  ib,
+  cq,
+  qf,
+  c,
+  ffz,
   js,
   cpp,
   python,
