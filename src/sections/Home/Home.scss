@@ -11,7 +11,6 @@
         justify-content: space-between;
         height: 5rem;
         max-width: 90rem;
-        // background-color: #fff;
         margin: 2rem auto;
         padding: 0 1rem;
 
@@ -60,20 +59,68 @@
     }
 }
 
-@media (width<960px) {
+@media (width<700px) {
     .home {
-        min-height: 80vh;
-
         .home-middle {
-
             h1 {
-                span {
-                    font-size: 3rem;
-                }
+                font-size: 3rem;
+                line-height: 3rem;
             }
 
-            h2 {
-                font-size: 3.8rem;
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (width<600px) {
+    .home {
+        .home-top {
+            img {
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+
+}
+
+@media (width<500px) {
+    .home {
+        .home-middle {
+            h1 {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+
+            p {
+                width: 90%;
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+        }
+    }
+}
+
+@media (width<360px) {
+    .home {
+        .home-top {
+            img {
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+
+        .home-middle {
+            h1 {
+                font-size: 1.85rem;
+            }
+
+            p {
+                width: 90%;
+                font-size: 1rem;
+                line-height: 1rem;
             }
         }
     }
