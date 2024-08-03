@@ -17,5 +17,9 @@
 @media (width<600px) {
     .projects {
         padding: 2rem 0;
+
+        .container {
+            gap: 2rem;
+        }
     }
 }

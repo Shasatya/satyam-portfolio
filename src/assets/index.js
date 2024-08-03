@@ -1,6 +1,13 @@
 import logo from "../assets/logo.png";
 import star from "../assets/star.png";
 
+//hero
+import cst from "../assets/cst.png";
+import ka from "../assets/ka.png";
+import plu from "../assets/plu.png";
+import ss from "../assets/ss.png";
+import uni from "../assets/uni.png";
+
 //project
 import ib from "../assets/ib.png";
 import cq from "../assets/cq.png";
@@ -44,6 +51,11 @@ import canva from "../assets/canva.png";
 export {
   logo,
   star,
+  cst,
+  ka,
+  plu,
+  ss,
+  uni,
   ib,
   cq,
   qf,

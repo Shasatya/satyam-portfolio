@@ -1,6 +1,6 @@
 import "./Home.scss";
-import { logo } from "../../assets";
 import { Button } from "../../components/index";
+import { logo } from "../../assets";
 const Home = () => {
   return (
     <section className="home" id="home">
