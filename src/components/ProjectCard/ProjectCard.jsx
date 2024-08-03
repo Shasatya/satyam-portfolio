@@ -38,7 +38,7 @@ const ProjectCard = ({ card }) => {
         </div>
         <div className="card-text">
           <h3>{card.title}</h3>
-          <p>Blog Website Development Project</p>
+          <p>{card.desc}</p>
           <div className="tags">
             {card.used.map((i) => (
               <Text textLabel={i} key={i} />
@@ -55,6 +55,7 @@ ProjectCard.propTypes = {
     id: PropTypes.number.isRequired,
     img: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
     used: PropTypes.arrayOf(PropTypes.string).isRequired,
     git: PropTypes.string.isRequired,
     site: PropTypes.string,

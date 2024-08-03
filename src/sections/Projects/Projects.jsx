@@ -1,5 +1,5 @@
 import "./Projects.scss";
-import { ProjectCardData } from "../../constants/index";
+import { ProjectCardData } from "../../constants/index.jsx";
 import { Text, ProjectCard } from "../../components/index";
 
 const Projects = () => {

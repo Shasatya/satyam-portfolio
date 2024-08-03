@@ -11,6 +11,8 @@ import uni from "../assets/uni.png";
 //project
 import ib from "../assets/ib.png";
 import cq from "../assets/cq.png";
+import sp from "../assets/sp.png";
+import nk from "../assets/nk.png";
 import qf from "../assets/qf.png";
 import c from "../assets/c.png";
 import ffz from "../assets/ffz.png";
@@ -58,6 +60,8 @@ export {
   uni,
   ib,
   cq,
+  sp,
+  nk,
   qf,
   c,
   ffz,
